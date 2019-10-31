@@ -76,22 +76,22 @@ public class Top extends JPanel{
 		java.awt.EventQueue.invokeLater(()->{
 			new Top(x->{
 				x.list
-					.add(new movable.Point(0, 0, 100, 100, Color.cyan).moveDown(.3).moveRight(1).sleep(1).moveDown(1).moveUp(1, .7));
+				.add(new movable.Point(0, 0, 100, 100, Color.cyan).moveDown(.3).moveRight(1).sleep(1).moveDown(1).moveUp(1, .7));
 				x.list.add(
 					new movable.Circle(100, 0, 150, 150, 20, Color.red).moveDown(1).moveRight(.6).moveDown(1).moveLeft(1).moveDown(2).moveUp(1, 4)
-				);
+					);
 				x.list
-					.add(new Point(500, 300, 100, 200, Color.black).moveRight(1.2).moveDown(2).moveLeft(1));
+				.add(new Point(500, 300, 100, 200, Color.black).moveRight(1.2).moveDown(2).moveLeft(1));
 
 			});
 			new Top(x->{
 				x.list
-					.add(new movable.Point(0, 0, 100, 100, Color.cyan).moveDown(.3).moveRight(1).sleep(1).moveDown(1).moveUp(1, .7));
+				.add(new movable.Point(0, 0, 100, 100, Color.cyan).moveDown(.3).moveRight(1).sleep(1).moveDown(1).moveUp(1, .7));
 				x.list.add(
 					new movable.Circle(100, 0, 150, 150, 20, Color.red).moveDown(1).moveRight(.6).moveDown(1).moveLeft(1).moveDown(2).moveUp(1, 4)
-				);
+					);
 				x.list
-					.add(new Point(500, 300, 100, -100, Color.black).moveRight(1.2).moveDown(2).moveLeft(1));
+				.add(new Point(500, 300, 100, -100, Color.black).moveRight(1.2).moveDown(2).moveLeft(1));
 
 			});
 		});

@@ -2,7 +2,7 @@ package movable;
 
 /**
  * Defines movement actions
- * 
+ *
  * @author Zekrom
  */
 @SuppressWarnings({"javadoc", "hiding"})
