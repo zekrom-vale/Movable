@@ -30,7 +30,7 @@ public class Point implements Movable{
 	@Override
 	public void draw(final Graphics g){
 		g.setColor(this.color);
-		g.fillRect(this.x, this.y, 30, 30);
+		g.fillRect(this.x+3, this.y+3, 5, 5);
 	}
 
 

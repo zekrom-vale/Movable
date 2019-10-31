@@ -20,7 +20,10 @@ public class Circle implements Movable{
 	@Override
 	public void draw(final Graphics g){
 		g.setColor(this.point.color);
-		g.fillOval(this.point.x, this.point.y, this.radius*2, this.radius*2);
+		g.fillOval(
+			this.point.x-this.radius, this.point.y-this.radius, this.radius*2,
+			this.radius*2
+			);
 	}
 
 	@Override
