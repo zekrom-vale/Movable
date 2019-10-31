@@ -34,8 +34,8 @@ public class Circle implements Movable{
 	 * @see          movable.Point#moveDown(double)
 	 */
 	@Override
-	public Circle moveDown(final double factor){
-		this.point.moveDown(factor);
+	public Circle moveDown(final int t, final double factor){
+		this.point.moveDown(t, factor);
 		return this;
 	}
 
@@ -44,8 +44,8 @@ public class Circle implements Movable{
 	 * @see          movable.Point#moveLeft(double)
 	 */
 	@Override
-	public Circle moveLeft(final double factor){
-		this.point.moveLeft(factor);
+	public Circle moveLeft(final int t, final double factor){
+		this.point.moveLeft(t, factor);
 		return this;
 	}
 
@@ -54,8 +54,8 @@ public class Circle implements Movable{
 	 * @see          movable.Point#moveRight(double)
 	 */
 	@Override
-	public Circle moveRight(final double factor){
-		this.point.moveRight(factor);
+	public Circle moveRight(final int t, final double factor){
+		this.point.moveRight(t, factor);
 		return this;
 	}
 
@@ -65,8 +65,8 @@ public class Circle implements Movable{
 	 * @see          movable.Point#moveUp(double)
 	 */
 	@Override
-	public Circle moveUp(final double factor){
-		this.point.moveUp(factor);
+	public Circle moveUp(final int t, final double factor){
+		this.point.moveUp(t, factor);
 		return this;
 	}
 

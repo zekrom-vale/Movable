@@ -64,12 +64,12 @@ public class Top extends JPanel{
 
 	public Top(){
 		this.list
-		.add(new movable.Point(0, 0, 100, 100, Color.cyan).moveDown().moveRight().moveDown().moveUp(.7));
+			.add(new movable.Point(0, 0, 100, 100, Color.cyan).moveDown(1).moveRight(1).sleep(1).moveDown(1).moveUp(1, .7));
 		this.list.add(
-			new movable.Circle(100, 0, 100, 100, 20, Color.red).moveDown().moveRight().moveDown().moveLeft().moveDown().moveUp(4)
+			new movable.Circle(100, 0, 100, 100, 20, Color.red).moveDown(1).moveRight(1).moveDown(1).moveLeft(1).moveDown(2).moveUp(1, 4)
 			);
 		this.list
-		.add(new Point(500, 300, 100, 100, Color.black).moveRight().moveDown().moveDown().moveLeft());
+		.add(new Point(500, 300, 100, 100, Color.black).moveRight(1).moveDown(2).moveLeft(1));
 
 		//Core
 		final JFrame frame=new JFrame("Move");

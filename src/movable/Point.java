@@ -7,7 +7,7 @@ import java.util.Queue;
 
 @SuppressWarnings({"javadoc", "hiding"})
 public class Point implements Movable{
-	public Action action=new Action(0, 0);
+	public Action action=new Action(0, 0, 0);
 	protected Queue<Action> actions=new LinkedList<>();
 	protected Color color;
 	protected double dx;
@@ -58,31 +58,31 @@ public class Point implements Movable{
 
 
 	@Override
-	public Point moveDown(final double factor){
-		this.actions.add(new Action(0, (int)(this.dy*factor)));
+	public Point moveDown(final int t, final double factor){
+		this.actions.add(new Action(0, (int)(this.dy*factor), t));
 		return this;
 
 	}
 
 
 	@Override
-	public Point moveLeft(final double factor){
-		this.actions.add(new Action(-(int)(this.dy*factor), 0));
+	public Point moveLeft(final int t, final double factor){
+		this.actions.add(new Action(-(int)(this.dy*factor), 0, t));
 		return this;
 
 	}
 
 
 	@Override
-	public Point moveRight(final double factor){
-		this.actions.add(new Action((int)(this.dy*factor), 0));
+	public Point moveRight(final int t, final double factor){
+		this.actions.add(new Action((int)(this.dy*factor), 0, t));
 		return this;
 
 	}
 
 	@Override
-	public Point moveUp(final double factor){
-		this.actions.add(new Action(0, -(int)(this.dy*factor)));
+	public Point moveUp(final int t, final double factor){
+		this.actions.add(new Action(0, -(int)(this.dy*factor), t));
 		return this;
 
 	}
@@ -90,8 +90,18 @@ public class Point implements Movable{
 
 	@Override
 	public void next(){
-		this.action=this.actions.poll();
-		if(this.action==null) this.action=new Action(0, 0);
+		if(this.action.t==0){
+			this.action=this.actions.poll();
+			if(this.action==null){
+				this.action=new Action(0, 0, 1000);
+			}
+			else this.next();
+			return;
+		}
+		if(this.action.t--==0){
+			this.action=this.actions.poll();
+			if(this.action==null) this.action=new Action(0, 0, 1000);
+		}
 	}
 
 
