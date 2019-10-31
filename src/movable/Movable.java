@@ -8,36 +8,36 @@ public interface Movable{
 
 	void move();
 
-	default Movable moveDown(final int t){
+	default Movable moveDown(final double t){
 		this.moveDown(t, 1);
 		return this;
 	}
 
-	Movable moveDown(int t, double factor);
+	Movable moveDown(double t, double factor);
 
-	default Movable moveLeft(final int t){
+	default Movable moveLeft(final double t){
 		this.moveLeft(t, 1);
 		return this;
 	}
 
-	Movable moveLeft(int t, double factor);
+	Movable moveLeft(double t, double factor);
 
-	default Movable moveRight(final int t){
+	default Movable moveRight(final double t){
 		this.moveRight(t, 1);
 		return this;
 	}
 
-	Movable moveRight(int t, double factor);
+	Movable moveRight(double t, double factor);
 
-	default void moveUp(final int t){
+	default void moveUp(final double t){
 		this.moveUp(t, 1);
 	}
 
-	Movable moveUp(int t, double factor);
+	Movable moveUp(double t, double factor);
 
 	void next();
 
-	default Movable sleep(final int t){
+	default Movable sleep(final double t){
 		this.moveUp(t, 0);
 		return this;
 	}

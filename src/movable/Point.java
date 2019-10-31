@@ -58,7 +58,7 @@ public class Point implements Movable{
 
 
 	@Override
-	public Point moveDown(final int t, final double factor){
+	public Point moveDown(final double t, final double factor){
 		this.actions.add(new Action(0, (int)(this.dy*factor), t));
 		return this;
 
@@ -66,7 +66,7 @@ public class Point implements Movable{
 
 
 	@Override
-	public Point moveLeft(final int t, final double factor){
+	public Point moveLeft(final double t, final double factor){
 		this.actions.add(new Action(-(int)(this.dy*factor), 0, t));
 		return this;
 
@@ -74,14 +74,14 @@ public class Point implements Movable{
 
 
 	@Override
-	public Point moveRight(final int t, final double factor){
+	public Point moveRight(final double t, final double factor){
 		this.actions.add(new Action((int)(this.dy*factor), 0, t));
 		return this;
 
 	}
 
 	@Override
-	public Point moveUp(final int t, final double factor){
+	public Point moveUp(final double t, final double factor){
 		this.actions.add(new Action(0, -(int)(this.dy*factor), t));
 		return this;
 
