@@ -114,7 +114,8 @@ public class Point implements Movable{
 	}
 
 	/**
-	* Creates a new {@link Action} object to to store the action for later use
+	* Creates a new {@link Action} object to to store the action for later use<br>
+	* Creates and stores an action to be preforemed latter, specificaly move down
 	* @param t how long to preform the action
 	* @return this to allow chaining of methods
 	*/
