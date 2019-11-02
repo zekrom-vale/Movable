@@ -5,10 +5,24 @@ import java.awt.Graphics;
 
 @SuppressWarnings("javadoc")
 
+/**
+* ResizableCricle1 Class impliments Movable and Resizable, Has-a {@link Circle} component<br>
+* Adds functionality to resize the circle
+* 
+* @see Circle
+* TODO fix name, to ResizableCircle1
+*/
 public class ResizableCricle1 implements Movable, Resizable{
+	
+	/**
+	* The circle object that this class is based off of
+	*/
 	private final Circle circle;
 
-
+	/**
+	* Alternate constructor<br>
+	* Creates a new ResizableCricle1 based off of {@link Circle}
+	*/
 	public ResizableCricle1(
 		final int x, final int y, final double dx, final double dy,
 		final int radius, final Color color
