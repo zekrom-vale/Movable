@@ -7,7 +7,7 @@ import java.awt.Graphics;
 public class Circle implements Movable{
 
 	protected Point point;
-	private final int radius;
+	protected int radius;
 	public Circle(
 		final int x, final int y, final double dx, final double dy,
 		final int radius, final Color color

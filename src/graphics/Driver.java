@@ -52,7 +52,7 @@ public class Driver{
 				final DrawPanel panelb=new DrawPanel();
 
 				final Movable object1b
-				=new movable.Point(0, 0, 200, 200, Color.cyan);
+					=new movable.Rectangle(0, 0, 100, 200, 200, 200, Color.cyan);
 				object1b.moveDown(.3);
 				object1b.moveRight(1);
 				object1b.sleep(1.13223);
