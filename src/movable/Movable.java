@@ -18,6 +18,7 @@ public interface Movable{
 	void move();
 	
 	/**
+	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Calls the method moveDown defined by the implimenting class
 	* @param t how long to preform the action
 	* @return this to allow chaining of methods
@@ -28,6 +29,7 @@ public interface Movable{
 	}
 	
 	/**
+	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Creates and stores an action to be preforemed latter, specificaly move down
 	* @param t how long to preform the action
 	* @param factor The factor of dy to move (2 is twice as fast, 1 is exactly the same speed, .5 is half, 0 is nothing)
@@ -36,6 +38,7 @@ public interface Movable{
 	Movable moveDown(double t, double factor);
 	
 	/**
+	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Calls the method moveLeft defined by the implimenting class
 	* @param t how long to preform the action
 	* @return this to allow chaining of methods
@@ -46,6 +49,7 @@ public interface Movable{
 	}
 	
 	/**
+	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Creates and stores an action to be preforemed latter, specificaly move left
 	* @param t how long to preform the action
 	* @param factor The factor of dx to move (2 is twice as fast, 1 is exactly the same speed, .5 is half, 0 is nothing)
@@ -54,6 +58,7 @@ public interface Movable{
 	Movable moveLeft(double t, double factor);
 
 	/**
+	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Calls the method moveRight defined by the implimenting class
 	* @param t how long to preform the action
 	* @return this to allow chaining of methods
@@ -64,6 +69,7 @@ public interface Movable{
 	}
 
 	/**
+	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Creates and stores an action to be preforemed latter, specificaly move right
 	* @param t how long to preform the action
 	* @param factor The factor of dx to move (2 is twice as fast, 1 is exactly the same speed, .5 is half, 0 is nothing)
@@ -72,6 +78,7 @@ public interface Movable{
 	Movable moveRight(double t, double factor);
 
 	/**
+	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Calls the method moveUp defined by the implimenting class
 	* @param t how long to preform the action
 	* @return this to allow chaining of methods
@@ -81,6 +88,7 @@ public interface Movable{
 	}
 
 	/**
+	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Creates and stores an action to be preforemed latter, specificaly move up
 	* @param t how long to preform the action
 	* @param factor The factor of dy to move (2 is twice as fast, 1 is exactly the same speed, .5 is half, 0 is nothing)
@@ -94,6 +102,7 @@ public interface Movable{
 	void next();
 
 	/*
+	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Makes the object to do nothing for the specifyed time
 	* @param t how long to preform the action
 	* @return this to allow chaining of methods
