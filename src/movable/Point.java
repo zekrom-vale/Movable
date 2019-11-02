@@ -117,6 +117,7 @@ public class Point implements Movable{
 	* Creates a new {@link Action} object to to store the action for later use<br>
 	* Creates and stores an action to be preforemed latter, specificaly move down
 	* @param t how long to preform the action
+	* @param factor The factor of dx to move (2 is twice as fast, 1 is exactly the same speed, .5 is half, 0 is nothing)
 	* @return this to allow chaining of methods
 	*/
 	@Override
